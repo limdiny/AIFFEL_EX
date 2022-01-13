@@ -5,6 +5,7 @@ src_input=tensor[:,:-1],tgt_input=tensor[:,1:]을 왜 이렇게 하는줄 몰랐
 
 
 * RNN(순환신경망)
+
 ![](https://images.velog.io/images/oooops/post/5a8672db-01a9-45ab-b7b9-aaf71b04a508/image.png)RNN에 `<start>` 라는 특수한 토큰을 맨 앞에 추가해서 문장의 시작을 알린다. 예를들어, '나는'이라는 단어가 나오면 확률적으로 높은 단어가 다음에 연결되고 계속해서 순환적으로 연결되는 구조이다. 문장이 끝이나면 인공지능이 `<end>` 라는 특수한 토큰을 생성한다.
 
   **입력데이터(문제지): `<start>`나는 밥을 먹는다.
